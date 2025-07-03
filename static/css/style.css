@@ -7131,6 +7131,12 @@ html {
     inset: 0% 0% auto;
     transform: scale3d(1, 0, 1);
   }
+
+    .sectionSpecial {
+      padding-top: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1748270709161---section--section-padding-vertical);
+      background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1748270709161---background-color--bg-primary);
+      color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1748270709161---text-color--text-primary);
+    }
   
   .nav-menu-full-page {
     z-index: 1;

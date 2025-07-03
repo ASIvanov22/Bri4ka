@@ -61,9 +61,14 @@ def our_story():
 def common_questions():
     return render_template("pages/commonQuestions.html")
  
+@app.route('/contact_us')
+def contact_us():
+    return render_template("pages/contactUs.html")
+
 @app.route('/ai_problem_solve')
 def ai_problem_solve():
     return render_template("pages/aiProblemSolve.html")
- 
+
+
 if __name__ == '__main__':
     app.run(debug=True)
