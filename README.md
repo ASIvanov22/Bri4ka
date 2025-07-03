@@ -1,6 +1,6 @@
 <h1 align="center">Bri4ka</h1>
 <p align = "center">
-<img src="../Bri4ka/static/images/logo.png"/>
+<img src="./static/images/logo.png"/>
 </p>
  
  
