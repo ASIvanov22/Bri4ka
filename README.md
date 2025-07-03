@@ -39,3 +39,9 @@ Drive smarter with Bri4ka—because every car problem has a solution.
 <a><img src="https://skillforge.com/wp-content/uploads/2020/10/javascript.png" heigh=48px width=39px/></a>
 <a><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" heigh=48px width=41px/></a>
 </p>
+
+## 📄 Documentation
+<p>
+<a href="/documents/Bri4ka.pptx"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS Word logo" width=48px /></a>
+<a><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" heigh=48px width=42px/></a>
+</p>
