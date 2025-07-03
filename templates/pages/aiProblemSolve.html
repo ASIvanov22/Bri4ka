@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bri4ka</title>
+  <link rel="stylesheet" href="/static/css/aiProblemSolve.css" />
+  <link href="/static/images/logo.png" rel="shortcut icon" type="image/png" />
+  <link href="../static/images/logo.png" rel="apple-touch-icon" />
+</head>
+<body>
+    <div class="nav inverse-nav">
+        <div data-duration="400" data-animation="default" data-easing2="ease" data-easing="ease" data-collapse="medium"
+            role="banner" data-no-scroll="1" class="nav-container w-nav">
+            <div class="nav-left"><a href="#" class="nav-logo w-inline-block">
+                    <div class="nav-logo-icon"><svg width="100%" height="100%" viewBox="0 0 33 33"
+                            preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z"
+                                fill="currentColor"></path>
+                        </svg></div>
+                    <div class="paragraph-lg utility-margin-bottom-0">Bri4ka</div>
+                </a></div>
+            <div class="nav-center">
+                <nav role="navigation" class="nav-menu w-nav-menu">
+                    <ul role="list" class="nav-menu-list w-list-unstyled">
+                        <li class="nav-menu-list-item"><a href="../index.html" class="nav-link nav-link-on-inverse w-inline-block">
+                                <div>Home</div>
+                            </a></li>
+                        <li class="nav-menu-list-item"><a href="../pages/ourStory.html" class="nav-link nav-link-on-inverse w-inline-block">
+                                <div>Our Story</div>
+                            </a></li>
+                        <li class="nav-menu-list-item"><a href="#" class="nav-link nav-link-on-inverse w-inline-block">
+                                <div>News</div>
+                            </a></li>
+                        <li class="nav-menu-list-item">
+                            <div data-delay="0" data-hover="false" data-w-id="e548359a-2a1e-1c08-c915-906775236ca4"
+                                class="nav-menu-dropdown w-dropdown">
+                                <div class="nav-link nav-link-on-inverse w-dropdown-toggle">
+                                    <div>Support</div>
+                                </div>
+                                <div class="nav-menu-dropdown-list w-dropdown-list">
+                                    <div class="nav-menu-dropdown-list-wrapper">
+                                        <ul role="list" class="flex-vertical utility-margin-bottom-0 w-list-unstyled">
+                                            <li class="utility-margin-bottom-0"><a href="#"
+                                                    class="nav-dropdown-link w-inline-block">
+                                                    <div class="button-label">Get Help</div>
+                                                </a></li>
+                                            <li class="utility-margin-bottom-0"><a href="#"
+                                                    class="nav-dropdown-link w-inline-block">
+                                                    <div class="button-label">Common Questions</div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <div class="button-group utility-margin-top-0"><a href="../templates/pages/aiProblemSolve.html"
+                        class="button primary-button-on-inverse w-inline-block">
+                        <div class="button-label">Get Started</div>
+                    </a></div>
+            </div>
+            <div class="nav-mobile-menu-button w-nav-button">
+                <div class="icon icon-on-inverse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5"
+                            fill="none" stroke="currentColor" stroke-miterlimit="10">
+                            <line x1="1" y1="12" x2="23" y2="12" stroke="currentColor"></line>
+                            <line x1="1" y1="5" x2="23" y2="5"></line>
+                            <line x1="1" y1="19" x2="23" y2="19"></line>
+                        </g>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+  <div class="container">
+    <header>
+      <h1>Bri4ka AI Assistant</h1>
+      <p>Describe your car problem and let AI help you.</p>
+    </header>
+    <main>
+      <textarea
+        id="userInput"
+        placeholder="Type your car issue here..."
+        rows="5"
+      ></textarea>
+      <button onclick="getAIResponse()">Get Help</button>
+      <div id="responseBox" class="hidden"></div>
+    </main>
+  </div>
+
+  
+
+  <script src="/static/scripts/aiProblemSolve.js"></script>
+</body>
+</html>
