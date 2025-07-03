@@ -34,10 +34,10 @@
             <div class="nav-center">
                 <nav role="navigation" class="nav-menu w-nav-menu">
                     <ul role="list" class="nav-menu-list w-list-unstyled">
-                        <li class="nav-menu-list-item"><a href="../templates/index.html" class="nav-link nav-link-on-inverse w-inline-block">
+                        <li class="nav-menu-list-item"><a href="{{ url_for('index') }}" class="nav-link nav-link-on-inverse w-inline-block">
                                 <div>Home</div>
                             </a></li>
-                        <li class="nav-menu-list-item"><a href="../templates/pages/ourStory.html" class="nav-link nav-link-on-inverse w-inline-block">
+                        <li class="nav-menu-list-item"><a href="{{ url_for('our_story') }}" class="nav-link nav-link-on-inverse w-inline-block">
                                 <div>Our Story</div>
                             </a></li>
                         <li class="nav-menu-list-item">
@@ -53,7 +53,7 @@
                                                     class="nav-dropdown-link w-inline-block">
                                                     <div class="button-label">Get Help</div>
                                                 </a></li>
-                                            <li class="utility-margin-bottom-0"><a href="../templates/pages/commonQuestions.html"
+                                            <li class="utility-margin-bottom-0"><a href="{{ url_for('common_questions') }}"
                                                     class="nav-dropdown-link w-inline-block">
                                                     <div class="button-label">Common Questions</div>
                                                 </a></li>
@@ -66,7 +66,7 @@
                 </nav>
             </div>
             <div class="nav-right">
-                <div class="button-group utility-margin-top-0"><a href="../templates/pages/aiProblemSolve.html"
+                <div class="button-group utility-margin-top-0"><a href="{{ url_for('ai_problem_solve') }}"
                         class="button primary-button-on-inverse w-inline-block">
                         <div class="button-label">Get Started</div>
                     </a></div>
@@ -91,7 +91,7 @@
             <p class="subheading">Type in any car problem—like &#x27;oil leaking&#x27;—and see exactly where the issue
                 is, plus get clear, practical fixes. Designed for everyone who wants to understand their car better, no
                 matter your experience.</p>
-            <div class="button-group align-center"><a href="../templates/pages/aiProblemSolve.html" class="button w-button">Try the app</a><a href="#"
+            <div class="button-group align-center"><a href="{{ url_for('ai_problem_solve') }}" class="button w-button">Try the app</a><a href="#"
                     class="button secondary-button w-button">How it works</a></div>
         </div>
         <div class="flex-horizontal x-center utility-overflow-hidden">
@@ -236,7 +236,7 @@
                     <h2 class="h2-heading">Your car&#x27;s ultimate companion</h2>
                     <p class="utility-margin-bottom-0">Dive into our app to effortlessly diagnose car issues and
                         discover quick solutions.</p>
-                </div><a id="w-node-_2892fc23-ab49-66e4-7457-d663c393e6b4-88b41581" href="../templates/pages/aiProblemSolve.html"
+                </div><a id="w-node-_2892fc23-ab49-66e4-7457-d663c393e6b4-88b41581" href="{{ url_for('ai_problem_solve') }}"
                     class="button w-node-_6213f771-9774-6843-fe9d-fd1579ca1e0f-67411017">Try now</a>
             </div>
             <div
@@ -607,7 +607,7 @@
                             <div class="icon-small on-accent-icon icon-container"><svg width="100%" height="100%"
                                     viewBox="0 0 16 16">
                                     <path
-                                        d="M8,1.441c2.136,0,2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.038.844.047,1.1.047,3.233s-.009,2.389-.047,3.233a4.419,4.419,0,0,1-.276,1.485,2.644,2.644,0,0,1-1.518,1.518,4.419,4.419,0,0,1-1.485.276c-.844.038-1.1.047-3.233.047s-2.389-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.472,2.472,0,0,1-.92-.6,2.472,2.472,0,0,1-.6-.92,4.419,4.419,0,0,1-.276-1.485c-.038-.844-.047-1.1-.047-3.233s.009-2.389.047-3.233a4.419,4.419,0,0,1,.276-1.485,2.472,2.472,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.844-.038,1.1-.047,3.233-.047M8,0C5.827,0,5.555.009,4.7.048A5.868,5.868,0,0,0,2.76.42a3.908,3.908,0,0,0-1.417.923A3.908,3.908,0,0,0,.42,2.76,5.868,5.868,0,0,0,.048,4.7C.009,5.555,0,5.827,0,8s.009,2.445.048,3.3A5.868,5.868,0,0,0,.42,13.24a3.908,3.908,0,0,0,.923,1.417,3.908,3.908,0,0,0,1.417.923,5.868,5.868,0,0,0,1.942.372C5.555,15.991,5.827,16,8,16s2.445-.009,3.3-.048a5.868,5.868,0,0,0,1.942-.372,4.094,4.094,0,0,0,2.34-2.34,5.868,5.868,0,0,0,.372-1.942c.039-.853.048-1.125.048-3.3s-.009-2.445-.048-3.3A5.868,5.868,0,0,0,15.58,2.76a3.908,3.908,0,0,0-.923-1.417A3.908,3.908,0,0,0,13.24.42,5.868,5.868,0,0,0,11.3.048C10.445.009,10.173,0,8,0Z"
+                                        d="M8,1.441c2.136,0,2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.038.844.047,1.1.047,3.233s-.009,2.389-.047,3.233a4.419,4.419,0,0,1-.276,1.485,2.644,2.644,0,0,1-1.518,1.518,4.419,4.419,0,0,1-1.485.276c-.844.038-1.1.047-3.233.047s-2.389-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.472,2.472,0,0,1-.92-.6,2.472,2.472,0,0,1-.6-.92,4.419,4.419,0,0,1-.276-1.485c-.038-.844-.047-1.1-.047-3.233s.009-2.389.047-3.233a4.419,4.419,0,0,1,.276-1.485,2.472,2.472,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.844-.038,1.1-.047,3.233-.047s2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.039.853.048,1.125.048,3.3s-.009,2.445-.048,3.3A5.868,5.868,0,0,0,15.58,2.76a3.908,3.908,0,0,0-.923-1.417A3.908,3.908,0,0,0,13.24.42,5.868,5.868,0,0,0,11.3.048C10.445.009,10.173,0,8,0Z"
                                         fill="currentColor"></path>
                                     <path
                                         d="M8,3.892A4.108,4.108,0,1,0,12.108,8,4.108,4.108,0,0,0,8,3.892Zm0,6.775A2.667,2.667,0,1,1,10.667,8,2.667,2.667,0,0,1,8,10.667Z"
