@@ -28,6 +28,7 @@ def ask_car_question():
     gemini_data = {
         "contents": [
             {
+                "role": "user",
                 "parts": [
                     {
                         "text": question
@@ -45,8 +46,9 @@ def ask_car_question():
             answer = result["candidates"][0]["content"]["parts"][0]["text"]
             return jsonify({"answer": answer})
         except KeyError:
-            return jsonify({"error": "Unexpected response format from Gemini API."}), 500
+            return jsonify({"error": "Unexpected response format from Gemini API.", "raw_response": result}), 500
     else:
+        print("Gemini API error:", response.status_code, response.text)
         return jsonify({"error": f"Gemini API error: {response.status_code}", "details": response.text}), 500
  
 @app.route('/')
