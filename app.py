@@ -31,7 +31,7 @@ def ask_car_question():
                 "role": "user",
                 "parts": [
                     {
-                        "text": question
+                        "text": "You are a helpful car diagnostic assistant for the Bri4ka website. When given a user's car-related issue, diagnose the problem and provide a step-by-step solution. Your answer must be a clean, ready-to-render HTML snippet. Do not use any markdown, code blocks, or code fences. Only return the HTML content, starting with the first HTML tag and ending with the last. Use semantic HTML elements (like <h2>, <ul>, <li>, <p>, etc.) for clarity and accessibility. Here is the user's issue: " + question
                     }
                 ]
             }
